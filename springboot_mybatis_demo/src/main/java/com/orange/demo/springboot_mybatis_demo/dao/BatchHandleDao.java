@@ -9,7 +9,6 @@ import java.util.List;
 
 @Mapper
 public interface BatchHandleDao {
-
     /**
      * 根据批次删除
      * @param map 批次号+类型
@@ -19,6 +18,5 @@ public interface BatchHandleDao {
     /**
      * 根据批次查询
      * */
-    List<BatchData> selectBatchByBatch(@Param("batch") String batch, @Param("type") Integer type);
+    List<BatchData> getBatchByBatch(@Param("batch") String batch, @Param("type") Integer type);
 }
-

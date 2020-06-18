@@ -12,11 +12,12 @@ spring:
     password: shtestagentcloud123
 
 #mapper文件放于src/main/resources目录下时，配置如下：
-mybatis:
-  mapper-locations: classpath:mybatis/mapper/*.xml
-  config-location: classpath:mybatis/mybatis-config.xml
 server:
   port: 8088
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.orange.demo.springboot_mybatis_demo.model
 #mapper文件放于src/main/java目录下时，配置如下：
 #mybatis:
 #  mapper-locations: classpath:com/orange/test/demo/mapper/*.xml

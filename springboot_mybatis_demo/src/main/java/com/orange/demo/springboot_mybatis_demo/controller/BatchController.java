@@ -36,8 +36,7 @@ public class BatchController {
         JSONObject jsonObject = new JSONObject(map);
         return jsonObject.toJSONString();
     }
-
-
+    
     /**
      * 根据批次号删除批次
      * @param batch 批次号

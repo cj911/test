@@ -24,7 +24,7 @@ public class BatchHandleServiceImpl implements BatchHandleService {
 
     @Override
     public List<BatchData> findBatchByBatch(String batch, Integer type) {
-        List<BatchData> dataList = batchHandleDao.selectBatchByBatch(batch, type);
+        List<BatchData> dataList = batchHandleDao.getBatchByBatch(batch, type);
         if (dataList != null && !dataList.isEmpty()){
             return dataList;
         }
