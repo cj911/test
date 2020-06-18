@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div ng-app="" ng-init="">
+    名字：<input type="text" ng-model="name"></p>
+    <h3>hello {{name}}</h3>
+    <p ng-bind="name"></p>
+</div>
+<!--建议把脚本放在 <body> 元素的底部。这会提高网页加载速度，因为 HTML 加载不受制于脚本加载。-->
+<script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
+</body>
+</html>

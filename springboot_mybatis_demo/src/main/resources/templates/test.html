@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script th:src="@{/js/jquery-3.1.0.js}"></script>
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                $.ajax({
+                    type:"post",
+                    url:"getBatchByBatch",
+                    data:{"type":1,"batch":"1"},
+                    success:function (d) {
+                        console.log(d);
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <input type="button" value="点击" id="btn">
+</body>
+</html>
